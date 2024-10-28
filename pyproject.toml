@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "vehicle-domain"
+version = "0.1.1"
+description = "Vehicle Domain package for handling core vehicle business logic"
+authors = ["Brenden Price <price.brenden01@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "domain" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+poetry = "^1.8.4"
+
+[tool.poetry.group.dev.dependencies]
+python = "^3.12"
+pytest = "^8.3.3"
+poetry = "^1.8.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
